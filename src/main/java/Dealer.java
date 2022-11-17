@@ -7,7 +7,7 @@ public class Dealer {
     private static final int CARS = 10;
     private final List<Car> cars = new ArrayList<>();
 
-    public void receiveCar() {
+    protected void receiveCar() {
         for (int i = 0; i < CARS; i++) {
             try {
                 Thread.sleep(RECIEVE_TIME);
